@@ -8,13 +8,14 @@ trigger:
 - main
 
 pool:
+name: 'default'
   vmImage: ubuntu-latest # examples of other options:'macOS-10.15','windows-latest'
   
 
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '22.x'
   displayName: 'Install Node.js'
 
 - script: |
